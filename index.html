@@ -1,0 +1,214 @@
+<!--Esta pagina fue elaborada con el fin de servir de muestra para un proyecto universitario-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrientaTech</title>
+    <link rel="icon" href="Imagenes/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+
+            <a href="#" class="logo">ORIENTATECH</a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="Imagenes/menu.png" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+        <div class="header-content container">
+
+            <div class="header-info">
+                <h1>Descúbrete</h1>
+                <p>Con cada simulación, etiendes mejor quién eres y y hacia dónde quieres ir  </p>
+                <a href="#" class="btn-1" id="openModal">Empieza</a>
+                
+                <!-- Modal -->
+                <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal">&times;</span>
+                    <h2>Formulario de Pedido</h2>
+                    <form>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+
+                    <!-- Casilla de verificación -->
+                    <label>
+                        <input type="checkbox" id="infoGafas" name="infoGafas" required>
+                        ¿Quieres recibir más información sobre las gafas de orientación vocacional?
+                    </label>
+
+                    <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                </div>
+                <!-- Fin de Modal -->
+
+            </div>
+            
+
+        </div>
+
+    </header>
+
+    <section class="orienta container">
+
+        <div class="orienta-1">
+
+            <h2><span>OrientaTech</span> ¿Quienes somos? </h2>
+            <p>
+                OrientaTech es una startup educativo-tecnológica dedicada a crear herramientas innovadoras que combinan
+                realidad virtual, evaluaciones psicológicas interactivas y gamificación para ayudar a adolescentes y
+                jóvenes a descubrir su verdadera vocación.
+                Nuestro objetivo es cerrar la brecha entre lo que eres y lo que puedes llegar a ser.
+            </p>
+            <!--<a href="#" class="btn-2">Empieza</a> -->
+
+        </div>
+
+        <div class="orienta-2">
+
+            <img class="img-1" src="Imagenes/g1.jpg" alt="orienta">
+            <img class="img-2" src="Imagenes/g2.jpg" alt="orienta">
+
+        </div>
+
+    </section>
+
+    <section class="orienta container">
+
+        <div class="orienta-2">
+
+            <img class="img-1" src="Imagenes/g3.jpg" alt="orienta">
+            <img class="img-2" src="Imagenes/g4.jpg" alt="orienta">
+
+        </div>
+
+        <div class="orienta-1">
+
+            <h2><span>Gafas</span> VisionJob </h2>
+            <p>
+                VisionJob son lentes de realidad virtual de última generación conectados a una app inteligente que guía
+                a los usuarios por un viaje inmersivo y personalizado. En cada sesión, el usuario explora profesiones,
+                simula tareas, responde desafíos y descubre sus habilidades, intereses y valores.
+            </p>
+
+
+        </div>
+
+
+
+    </section>
+
+    <section class="orienta container">
+
+        <div class="orienta-1">
+
+            <h2><span>Beneficios</span>  </h2>
+            <p>
+                Descubrirás habilidades, intereses y talentos explorando
+                un entorno profesional de forma virtual, donde aprenderás jugando
+                con retos interactivos. Las gafas son compatibles con Android, IOS
+                y PC pudiendo usarlas en la casa o el colegio.
+            </p>
+            <!--<a href="#" class="btn-2">Empieza</a> -->
+
+        </div>
+
+        <div class="orienta-2">
+
+            <img class="img-1" src="Imagenes/g5.jpg" alt="orienta">
+            <img class="img-2" src="Imagenes/g6.jpg" alt="orienta">
+
+        </div>
+
+    </section>
+
+    <section class="orienta container">
+
+        <div class="orienta-2">
+
+            <img class="img-1" src="Imagenes/g7.jpeg" alt="orienta">
+            <img class="img-2" src="Imagenes/g8.jpeg" alt="orienta">
+
+        </div>
+
+        <div class="orienta-1">
+
+            <h2><span>Recomendación</span>  </h2>
+            <p>
+                Se sugiere usar el producto de 2 a 3 veces por semana
+                combinandolo con una orientación profesional para un mejor resultado.
+            </p>
+            <a href="#" class="btn-2">Empieza</a>
+
+        </div>
+
+        
+
+    </section>
+
+
+
+    <footer class="footer container">
+        <h3>ORIENTATECH</h3>
+
+        <div class="links">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">información</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script>
+    const openModal = document.getElementById('openModal');
+    const closeModal = document.getElementById('closeModal');
+    const modal = document.getElementById('modal');
+
+    openModal.addEventListener('click', function(e) {
+        e.preventDefault();
+        modal.style.display = 'block';
+    });
+
+    closeModal.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(e) {
+        if (e.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+    </script>
+
+</body>
+
+</html>
